@@ -14,7 +14,7 @@
       width: 100%;
     }
     body {
-      background-image: url('generated_image_.jpeg');
+      background-image: url('generated_image_e7baffdd580b11f09b11ba491b3b44de_2.jpeg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -27,7 +27,14 @@
       color: #2f2d24;
       padding: 0 20px;
     }
-    h1 {
+
+    /* Скрываем мобильный заголовок по умолчанию */
+    .mobile-title {
+      display: none;
+    }
+
+    /* Стили для десктопного заголовка */
+    .desktop-title {
       color: #2f2d24;
       text-shadow:
         0 0 8px #f7e600,
@@ -36,12 +43,13 @@
       margin-bottom: 10px;
       font-size: 36px;
     }
+
     p {
       color: #2f2d24;
-      text-shadow: none;
+      text-shadow: none; /* убрали тень */
       margin-bottom: 30px;
       font-size: 16px;
-      font-weight: 700;
+      font-weight: 600;
     }
     .btn {
       background: #f7e600;
@@ -49,17 +57,18 @@
       border: none;
       padding: 15px 30px;
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 600;
       border-radius: 10px;
       cursor: pointer;
-      box-shadow: 0 0 10px #f7e600;
+      box-shadow:
+        0 0 10px #f7e600;
       transition: background 0.3s ease;
     }
     .btn:hover {
-      background: #1e1c16;
+      background: #d6ca00;
     }
 
-      /* Медиа-запрос для мобильных */
+/* Медиа-запрос для мобильных */
     @media (max-width: 768px) {
       /* Скрываем десктопный заголовок */
       .desktop-title {
