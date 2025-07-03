@@ -59,19 +59,32 @@
       background: #1e1c16;
     }
 
-    /* Медиа-запрос для телефонов */
+      /* Медиа-запрос для мобильных */
     @media (max-width: 768px) {
-      h1 {
-        font-size: 72px;
+      /* Скрываем десктопный заголовок */
+      .desktop-title {
+        display: none;
+      }
+      /* Показываем мобильный заголовок */
+      .mobile-title {
+        display: block;
+        color: #2f2d24;
+        text-shadow:
+          0 0 8px #f7e600,
+          0 0 15px #f7e600,
+          0 0 20px #f7e600;
+        margin-bottom: 10px;
+        font-size: 95px;
       }
       p {
-        font-size: 56px;
-        font-weight: 700;
+        font-size: 65px;
+        font-weight: 600;
         text-shadow: none;
       }
       .btn {
-        font-size: 46px;
-        padding: 80px 150px;
+        font-size: 65px;
+        font-weight: 600;
+        padding: 90px 130px;
         box-shadow: none;
       }
     }
