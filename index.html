@@ -46,7 +46,7 @@
 
     p {
       color: #2f2d24;
-      text-shadow: none; /* убрали тень */
+      text-shadow: none;
       margin-bottom: 30px;
       font-size: 16px;
       font-weight: 600;
@@ -68,13 +68,11 @@
       background: #d6ca00;
     }
 
-/* Медиа-запрос для мобильных */
+    /* Медиа-запрос для мобильных */
     @media (max-width: 768px) {
-      /* Скрываем десктопный заголовок */
       .desktop-title {
         display: none;
       }
-      /* Показываем мобильный заголовок */
       .mobile-title {
         display: block;
         color: #2f2d24;
@@ -83,17 +81,19 @@
           0 0 15px #f7e600,
           0 0 20px #f7e600;
         margin-bottom: 10px;
-        font-size: 150px;
+        font-size: 28px;
+        line-height: 1.2;
+        white-space: normal;
       }
       p {
-        font-size: 150px;
+        font-size: 22px;
         font-weight: 600;
         text-shadow: none;
       }
       .btn {
-        font-size: 90px;
+        font-size: 22px;
         font-weight: 700;
-        padding: 200px 250px;
+        padding: 15px 30px;
         box-shadow: none;
       }
     }
@@ -102,7 +102,10 @@
 <body>
   <h1 class="desktop-title">ЦЕНТР АЛЬТЕРНАТИВНОГО САМОПОЗНАНИЯ<br>"БЕЛЫЙ СВЕТ"</h1>
   <h1 class="mobile-title">
-    ЦЕНТР<br>АЛЬТЕРНАТИВНОГО САМОПОЗНАНИЯ<br>"БЕЛЫЙ СВЕТ"</h1>
+    ЦЕНТР<br>
+    АЛЬТЕРНАТИВНОГО САМОПОЗНАНИЯ<br>
+    "БЕЛЫЙ СВЕТ"
+  </h1>
   <p>ПУТЬ К СЕБЕ ЧЕРЕЗ СВЕТ ОСОЗНАННОСТИ</p>
   <button class="btn">О НАС</button>
 </body>
