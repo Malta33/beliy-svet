@@ -1,2 +1,2 @@
-# beliy-svet
+# beliy-svet.ru
 мой сайт центра регрессии
